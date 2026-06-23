@@ -3,43 +3,31 @@ Uber Trip Analysis Dashboard using Power BI | End-to-End Data Analytics Project 
 
 ##Files in the Project
 
-UberDataset.csv: The original dataset containing raw Uber ride data.
-Dashboard.png: An image file showing the dashboard visualizing the analysis results.
-Uber_Rides_Data_Analysis_Documentation_and_Recommendations.docx: A document containing detailed documentation of the analysis steps and recommendations based on the analysis.
+-UberDataset.csv: The original dataset containing raw Uber ride data.
+-Dashboard.png: An image file showing the dashboard visualizing the analysis results.
+-Uber_Rides_Data_Analysis_Documentation_and_Recommendations.docx: A document containing detailed documentation of the analysis steps and recommendations based on the analysis.
 
 ##Analysis Steps
 
-Importing Libraries:
+~Importing Libraries:Used pandas for data manipulation, numpy for numerical operations, matplotlib.pyplot and seaborn for data visualization.
 
-Used pandas for data manipulation, numpy for numerical operations, matplotlib.pyplot and seaborn for data visualization.
-Loading the Dataset:
+~Loading the Dataset:Loaded the Uber dataset from a CSV file and displayed the first 10 rows to understand its structure.
 
-Loaded the Uber dataset from a CSV file and displayed the first 10 rows to understand its structure.
-Basic Data Exploration:
+~Basic Data Exploration:Generated summary statistics, concise data summary, checked for missing values, duplicate rows, and unique values in each column.
 
-Generated summary statistics, concise data summary, checked for missing values, duplicate rows, and unique values in each column.
-Handling Missing Values:
+~Handling Missing Values:Filled missing values in the 'PURPOSE' column using forward fill method.
 
-Filled missing values in the 'PURPOSE' column using forward fill method.
-Converting Date Columns:
+~Converting Date Columns:Converted 'START_DATE' and 'END_DATE' columns to datetime format.
 
-Converted 'START_DATE' and 'END_DATE' columns to datetime format.
-Extracting Date and Time Components:
+~Extracting Date and Time Components:Extracted date, time, month, and year from 'START_DATE' and 'END_DATE' columns and added these as new columns.
 
-Extracted date, time, month, and year from 'START_DATE' and 'END_DATE' columns and added these as new columns.
-Dropping Original Date Columns:
+~Dropping Original Date Columns:Dropped 'START_DATE' and 'END_DATE' columns and rearranged the remaining columns.
 
-Dropped 'START_DATE' and 'END_DATE' columns and rearranged the remaining columns.
-Handling Missing Values in 'Month' and 'Year' Columns:
+~Handling Missing Values in 'Month' and 'Year' Columns:Filled missing values in the 'month' and 'year' columns using the mode and converted them to integer type.
 
-Filled missing values in the 'month' and 'year' columns using the mode and converted them to integer type.
-Extracting Hour and Minute Components:
+~Extracting Hour and Minute Components:Extracted hours and minutes from 'start_time' and 'end_time' columns and added them as new columns.
 
-Extracted hours and minutes from 'start_time' and 'end_time' columns and added them as new columns.
-Calculating Duration:
+~Calculating Duration:Calculated the duration of each trip in minutes and added it as a new column.
 
-Calculated the duration of each trip in minutes and added it as a new column.
-Plotting Data:
+~Plotting Data:Visualized the data using various plots like heatmap for correlations, count plots, bar plots, and distribution plots to understand the patterns and distributions in the data.
 
-Visualized the data using various plots like heatmap for correlations, count plots, bar plots, and distribution plots to understand the patterns and distributions in the data.
-Saving Cleaned Data:
