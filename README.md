@@ -33,3 +33,15 @@ Uber Trip Analysis Dashboard using Power BI | End-to-End Data Analytics Project 
 
 ~Plotting Data:Visualized the data using various plots like heatmap for correlations, count plots, bar plots, and distribution plots to understand the patterns and distributions in the data.
 
+## Key Insights
+
+- Identified peak booking periods and ride demand trends.
+  
+- Analyzed revenue generation and trip performance.
+  
+- Examined trip duration and distance patterns.
+  
+- Provided insights to support operational and strategic decisions.
+  
+- Enabled easy exploration of data through interactive reports.
+
